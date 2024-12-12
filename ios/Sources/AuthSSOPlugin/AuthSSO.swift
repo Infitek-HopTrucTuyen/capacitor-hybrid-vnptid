@@ -5,4 +5,9 @@ import Foundation
         print(value)
         return "ios -> " + value
     }
+    
+    @objc public func signIn(_ value: [String: Any]) -> [String: Any] {
+        print(value)
+        return value
+    }
 }

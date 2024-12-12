@@ -1,6 +1,5 @@
 import Foundation
 import Capacitor
-import VNPTID
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
@@ -20,5 +19,28 @@ public class AuthSSOPlugin: CAPPlugin, CAPBridgedPlugin {
         call.resolve([
             "value": implementation.echo(value)
         ])
+    }
+    
+    //var thisVC: CustomViewController?
+    
+    @objc func signIn(_ call: CAPPluginCall) {
+        
+        //guard let customView = bridge?.viewController as? CustomViewController else {
+        //    call.reject("Failed to cast ViewController")
+        //    return
+        //}
+        
+        //let res = customView.signIn()
+        
+        let res = [
+            "name": "demo1",
+            "pwd": "123456a@"
+        ]
+        
+        call.resolve([
+            "status": true,
+            "value": implementation.signIn(res)
+        ])
+        
     }
 }
