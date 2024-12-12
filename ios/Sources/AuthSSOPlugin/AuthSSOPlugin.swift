@@ -10,7 +10,8 @@ public class AuthSSOPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "AuthSSOPlugin"
     public let jsName = "AuthSSO"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "signIn", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = AuthSSO()
 
