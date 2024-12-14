@@ -11,9 +11,9 @@ export class AuthSSOWeb extends WebPlugin implements AuthSSOPlugin {
     return options;
   }
 
-  async signIn(): Promise<{ status: boolean; value: string; }> {
-    const status = true;
-    const value = "Sign-in successful";
-    return { status, value };  // The return is implicitly wrapped in a Promise
+  async signIn(): Promise<{ status: boolean; data: string; }> {
+    const status = false;
+    const data = "Chức năng chỉ hoạt động trên ứng dụng ios hoặc android";
+    return { status, data };
   }
 }
