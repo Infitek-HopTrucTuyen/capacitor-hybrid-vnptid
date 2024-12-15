@@ -1,3 +1,6 @@
+/*
+    MOVE TO MAIN PROJECT
+
 package monremeeting.hybrid.vnptid;
 
 import android.util.Log;
@@ -9,3 +12,4 @@ public class AuthSSO {
         return "android -> " + value;
     }
 }
+*/

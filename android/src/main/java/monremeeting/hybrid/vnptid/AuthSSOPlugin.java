@@ -1,3 +1,6 @@
+/*
+    MOVE TO MAIN PROJECT
+
 package monremeeting.hybrid.vnptid;
 
 import com.getcapacitor.JSObject;
@@ -20,3 +23,4 @@ public class AuthSSOPlugin extends Plugin {
         call.resolve(ret);
     }
 }
+*/
