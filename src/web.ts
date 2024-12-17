@@ -11,9 +11,9 @@ export class AuthSSOWeb extends WebPlugin implements AuthSSOPlugin {
     return options;
   }
 
-  async signIn(): Promise<{ status: boolean; data: string; }> {
+  async signIn(): Promise<{ status: boolean, message: string, data?: string, token?: string, tokenAccess?: string, tokenRefresh?: string }> {
     const status = false;
-    const data = "Chức năng chỉ hoạt động trên ứng dụng ios hoặc android";
-    return { status, data };
+    const message = "Chức năng chỉ hoạt động trên ứng dụng ios hoặc android";
+    return { status, message };
   }
 }

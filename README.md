@@ -39,10 +39,10 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 ### signIn()
 
 ```typescript
-signIn() => Promise<{ status: boolean; data: string; }>
+signIn() => Promise<{ status: boolean; message: string; data?: string; token?: string; tokenAccess?: string; tokenRefresh?: string; }>
 ```
 
-**Returns:** <code>Promise&lt;{ status: boolean; data: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ status: boolean; message: string; data?: string; token?: string; tokenAccess?: string; tokenRefresh?: string; }&gt;</code>
 
 --------------------
 
