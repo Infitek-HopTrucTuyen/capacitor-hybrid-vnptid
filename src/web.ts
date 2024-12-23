@@ -16,4 +16,11 @@ export class AuthSSOWeb extends WebPlugin implements AuthSSOPlugin {
     const message = "Chức năng chỉ hoạt động trên ứng dụng ios hoặc android";
     return { status, message };
   }
+
+  async signOut(): Promise<{ status: boolean, message: string }> {
+    const status = false;
+    const message = "Chức năng chỉ hoạt động trên ứng dụng ios hoặc android";
+    return { status, message };
+  }
+
 }

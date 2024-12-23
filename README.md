@@ -15,6 +15,7 @@ npx cap sync
 
 * [`echo(...)`](#echo)
 * [`signIn()`](#signin)
+* [`signOut()`](#signout)
 
 </docgen-index>
 
@@ -43,6 +44,17 @@ signIn() => Promise<{ status: boolean; message: string; data?: string; token?: s
 ```
 
 **Returns:** <code>Promise&lt;{ status: boolean; message: string; data?: string; token?: string; tokenAccess?: string; tokenRefresh?: string; }&gt;</code>
+
+--------------------
+
+
+### signOut()
+
+```typescript
+signOut() => Promise<{ status: boolean; message: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ status: boolean; message: string; }&gt;</code>
 
 --------------------
 
